@@ -1,0 +1,45 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;  /* Optional: Adjust the max-width */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%; /* Each slide will take full width */
+  height: 300px;   /* Set the height of each slide */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-img {
+  width: 100%;      /* Make image full width of the slide */
+  height: 100%;     /* Make image full height of the slide */
+  object-fit: cover; /* This will ensure the image covers the full slide */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0px;
+}
+
+.next {
+  right: 2px;
+}
